@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="25dp">
+
+        <ImageView
+
+            android:id="@+id/ImageView1"
+            android:layout_width="311dp"
+
+            android:layout_height="134dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="23dp"
+            app:srcCompat="@drawable/books1">
+
+        </ImageView>
+
+        <EditText
+
+            android:id="@+id/etTitle"
+            android:layout_below="@id/ImageView1"
+
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="43dp"
+            android:ems="10"
+
+            android:hint="@string/home_text_search_title"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etAuthor"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="42dp"
+            android:ems="10"
+
+            android:hint="@string/home_text_search_author"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@android:dimen/thumbnail_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+
+            android:text="@string/home_text_search_and" />
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etAuthor"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="108dp"
+            android:text="@string/home_text_search_button" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

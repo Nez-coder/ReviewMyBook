@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ReviewMyBook</string>
+    <string name="home_label_search">Search here</string>
+   <string name="home_text_search_title">Enter title</string>
+    <string name="home_text_search_author">Enter author</string>
+    <string name="home_text_search_button">Search here</string>
+
+    <string name="home_text_search_and">And/Or</string>
+
+</resources>
