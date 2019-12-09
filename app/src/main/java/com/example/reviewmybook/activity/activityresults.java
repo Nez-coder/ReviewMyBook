@@ -2,8 +2,17 @@ package com.example.reviewmybook.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Layout;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Toast;
+
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,12 +23,11 @@ import com.example.reviewmybook.adapters.SubjectData;
 
 import java.util.ArrayList;
 
-public class activityresults extends AppCompatActivity
-{
-    public void onCreate(@Nullable Bundle saveInstanceState)
-    {
+public class activityresults extends AppCompatActivity {
+    public void onCreate(@Nullable Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_results);
+
         // Get the transferred data from source activity.
 
         String message = getIntent().getStringExtra("message");
@@ -38,5 +46,13 @@ public class activityresults extends AppCompatActivity
         CustomAdapter customAdapter = new CustomAdapter(this, arrayList);
         list.setAdapter(customAdapter);
     }
+
+        public void processImageClick(View v) {
+            Intent intent = new Intent(getApplicationContext(), activityreviews.class);
+               startActivity(intent);
+        }
+
+
+
 }
 

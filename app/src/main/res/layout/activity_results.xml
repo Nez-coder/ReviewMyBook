@@ -9,17 +9,18 @@
         android:layout_width="match_parent"
         android:layout_height="63dp"
         android:background="#D8C9C9"></TextView>
-   <ListView
-       android:id="@+id/list"
 
-       android:layout_width="wrap_content"
-       android:layout_height="match_parent"
-       android:divider = "#000"
-       android:dividerHeight = "1dp"
-       android:footerDividersEnabled = "false"
-       android:headerDividersEnabled = "false">
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:divider="#000"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false">
 
 
-   </ListView>
+    </ListView>
 
 </LinearLayout>

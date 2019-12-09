@@ -10,7 +10,8 @@
 
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.activityhome">
+        <activity android:name=".activity.activityhome"></activity>
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER"/>
             <action android:name="android.intent.action.MAIN" />

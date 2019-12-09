@@ -8,8 +8,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
+
 import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
+
 import com.example.reviewmybook.R;
 
 import static android.view.View.*;
@@ -43,21 +46,25 @@ public class CustomAdapter implements ListAdapter {
 
     @Override
     public int getCount() {
+
         return arrayList.size();
     }
 
     @Override
     public Object getItem(int position) {
+
         return position;
     }
 
     @Override
     public long getItemId(int position) {
+
         return position;
     }
 
     @Override
     public boolean hasStableIds() {
+
         return false;
     }
 
@@ -66,7 +73,7 @@ public class CustomAdapter implements ListAdapter {
         SubjectData subjectData = arrayList.get(position);
         if (convertView == null) {
             LayoutInflater layoutInflater = LayoutInflater.from(context);
-        convertView = layoutInflater.inflate(R.layout.list_row, null);
+            convertView = layoutInflater.inflate(R.layout.list_row, null);
             convertView.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -84,16 +91,19 @@ public class CustomAdapter implements ListAdapter {
 
     @Override
     public int getItemViewType(int position) {
+
         return position;
     }
 
     @Override
-    public int getViewTypeCount() {
+    public int getViewTypeCount()
+    {
         return arrayList.size();
     }
 
     @Override
     public boolean isEmpty() {
+
         return false;
     }
 }
